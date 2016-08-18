@@ -1,0 +1,6 @@
+@namespace("helloWorld.idl")
+protocol User {
+  string name;
+  array<string> favorite_colors;
+  union { null, int } opt_favorite_number;
+}

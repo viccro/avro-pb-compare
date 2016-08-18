@@ -1,0 +1,27 @@
+{
+    "name": "User",
+    "namespace": "helloWorld.json",
+    "type": "record",
+    "fields": [
+        {
+            "name": "username",
+            "type": "string"
+        },
+        {
+            "name": "favorite_colors",
+            "type": 
+                {
+                    "items": "string",
+                    "name": "color",
+                    "type": "array"
+                }
+        },
+        {
+            "name": "opt_favorite_number",
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    ]
+}
