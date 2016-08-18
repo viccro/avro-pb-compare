@@ -8,16 +8,16 @@
             "type": "string"
         },
         {
-            "name": "favorite_colors",
+            "name": "favorite_nums",
             "type": 
                 {
-                    "items": "string",
+                    "items": "int",
                     "name": "color",
                     "type": "array"
                 }
         },
         {
-            "name": "opt_favorite_number",
+            "name": "opt_favorite_color",
             "type": [
                 "string",
                 "null"
