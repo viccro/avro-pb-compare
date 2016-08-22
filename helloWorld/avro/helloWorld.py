@@ -21,4 +21,4 @@ reader = DataFileReader(open("output.avro", "rb"), DatumReader())
 
 for user in reader:
     print user
-    reader.close()
+reader.close()
