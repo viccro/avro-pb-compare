@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message relatedArticleID {
+  oneof relatedArticleIDs{
+    string raTitle = 1;
+    int32 raID = 2;
+  }
+}
+
+message Article {
+  string title = 1;
+  repeated relatedArticleID idList= 2;
+}

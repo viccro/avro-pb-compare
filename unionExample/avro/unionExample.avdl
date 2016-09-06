@@ -1,0 +1,8 @@
+protocol relatedArticleIDs {
+  union { null, int, string } relatedArticleID = null;
+}
+
+protocol Article {
+  string title;
+  repeated relatedArticleIDs;
+}

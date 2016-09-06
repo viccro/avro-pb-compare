@@ -1,0 +1,29 @@
+[
+{
+    "name": "idOptions",
+    "type": "record",
+    "fields" : [
+      {
+    "name" : "idValue",
+    "type" : ["null","string","int"],
+    "default" : "null"
+      }
+    ]
+},
+
+{
+    "name": "Article",
+    "type": "record",
+    "fields": [
+    {
+        "name": "relatedArticleIDs",
+        "type":
+                {
+                    "items": "idOptions",
+                    "name": "articleIDs",
+                    "type": "array"
+                }
+    }
+    ]
+}
+]
